@@ -1,13 +1,14 @@
 import Image from "next/image";
 
-export default async function MovieDetail() {
+export default async function MovieDetail({params}) {
+  
   const {movie_id} = params
     const res=await fetch(`https://api.themoviedb.org/3/movie/${movie_id}?api_key=${process.env.API_KEY}`,  {cache:'no-store'})
     const data= await  res.json()
     const {title,release_data,runtime,status,poster_path,overview}=data
 
   return (
-    <div  className=" my-6 mx-9"nnn>
+    <div  className=" my-6 mx-9">
       <h2 className="text-2xl font-bold">{title}</h2>
       <h2 className="text-lg">{release_data}</h2>
       <h2>Runtime: {runtime} minutes</h2>
