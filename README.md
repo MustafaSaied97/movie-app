@@ -3,6 +3,7 @@ for styling I used Tailwind css
 and for fetching data I used the MovieDatabaseApi 
 
 the app contains 3 pages:
+
 1- a main page  displays all movies that the user is searching for
 also, all movies that are selected by cataogries
 
