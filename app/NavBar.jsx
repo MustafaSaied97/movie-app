@@ -11,7 +11,7 @@ import { BiX } from "react-icons/bi";
 
 function MobileNav({open}) {
   return (
-      <div className={`fixed z-10 top-0 left-0 h-screen w-screen backdrop-blur-md bg-white/30 transform ${open ? "-translate-y-0" : "-translate-y-full"} transition-transform duration-300 ease-in-out filter  `}>
+      <div className={`lg:hidden fixed z-10 top-0 left-0  h-screen  sm:w-6/12 w-9/12 backdrop-blur-md bg-white/30 transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
           <div className="flex flex-col w-full justify-center items-center mt-28">
             <SideBar/>
           </div>  
@@ -33,7 +33,7 @@ export default function NavBar() {
         <div className="text-2xl order-first lg:hidden">
             <div className=" flex justify-center items-center">
                 <div className="group z-50 relative w-6 h-6  cursor-pointer flex-col justify-between items-center flex" onClick={() => {setOpen(!open)}}>
-                    {open?<span className="bg-gray-700"><BiX/></span>:<GiHamburgerMenu/>}
+                    {open?<span className="fixed bg-gray-700 "><BiX/></span>:<GiHamburgerMenu/>}
                 </div>
             </div>
         </div>

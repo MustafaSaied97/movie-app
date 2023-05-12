@@ -19,13 +19,13 @@ export default function SideBar() {
           </div>
       </form>
       <div className=" px-6 my-6 mt-11 h-full">
-        <h1 className="font-semibold">categories</h1>
-        <ul className="mt-11  ml-2 flex flex-col justify-around  h-2/5 ">
+        <h1 className="font-semibold ">categories</h1>
+        <ul className="lg:mt-14 mt-4  ml-2 flex flex-col justify-around gab-5  h-2/5 ">
           {Object.entries(requests).map(([key,{title,url,logo}])=>(
             <li 
               key={key} 
               onClick={()=>router.push(`/?genres=${key}`)}
-              className=" pl-1 p-2 hover:bg-gray-500 hover:rounded-lg hover:cursor-pointer focus:bg-gray-500 focus:rounded-lg"
+              className=" bg-slate-600 lg:bg-slate-700 lg:hover:bg-gray-500 rounded-lg hover:cursor-pointer  pl-1 p-1 mb-3   "
             >
               <span className="mr-2 inline-block">{logo}</span>{title}
             </li>

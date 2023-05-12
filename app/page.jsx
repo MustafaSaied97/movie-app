@@ -16,7 +16,7 @@ export default async function Home({searchParams}) {
 
     <main className="grid place-content-center">
 
-      <div className="fixed hidden lg:flex flex-col w-64 ml-2 px-2 py-2 bg-gray-800 rounded-lg h-5/6 ">
+      <div className="fixed hidden lg:flex flex-col  justify-center items-center  w-64 ml-2 px-2 py-2 bg-gray-800 rounded-lg h-5/6 ">
         <SideBar/>
       </div>
 
