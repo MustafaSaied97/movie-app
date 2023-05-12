@@ -9,4 +9,4 @@ also, all movies that are selected by cataogries
 
 2- movie details page for displaying  additional details for each movie
 
-3- favorite page for displaying  favorite movies that the user was selected 
+3- favorite page for displaying  favorite movies that the user was selected and  i used localstorage for storing the activities of the user and what he selected   
